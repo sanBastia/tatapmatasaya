@@ -1,0 +1,28 @@
+<% include partials/headers %>
+  <div class="container">
+    <div class="jumbotron" style="background:transparent">
+      <img src="http://i.imgur.com/C3SNdeo.jpg" class="img-responsive" style="width:1000px;" alt="tatap mata saya">
+    </div>
+
+
+    <div class="container-fluid ">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title"><strong>Who are you ??</strong></h3></div>
+        <div class="panel-body">
+          <form action="/addUser" method="post">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username</label>
+              <input type="text" class="form-control" name="username" placeholder="Enter username">
+            </div>
+            <button type="submit" class="btn btn-sm btn-default">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>
+
+<% include partials/footers %>

@@ -1,0 +1,51 @@
+<% include partials/headers %>
+
+<div class="container">
+  <div class="jumbotron" style="background:transparent">
+    <img src="http://i.imgur.com/C3SNdeo.jpg" class="img-responsive" style="width:1000px;" alt="tatap mata saya">
+  </div>
+
+
+  <div class="container">
+
+    <blockquote class="pull-right">
+  <h1>"The more you look, the less you see."</h1>
+  <footer>J. Daniel Atlas <cite title="Source Title">Now you see me 2</cite></footer>
+</blockquote>
+    <p class="text-center"><h1><small>I want to play a game with you...</small> Look into my eyes
+      <small>now imagine <mark style="color:red">one of our Instructor</mark> in hacktiv8</small>
+      are you ready ?</h1></p>
+
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      I AM READDY !
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">who you are ?</h4>
+            </div>
+              <form action="/addUser" method="post">
+            <div class="modal-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Username</label>
+                  <input type="text" class="form-control" name="username" placeholder="Enter username">
+                </div>
+                <!-- <button type="submit" class="btn btn-sm btn-default">Sign in</button> -->
+
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-default">sign in</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<% include partials/footer %>

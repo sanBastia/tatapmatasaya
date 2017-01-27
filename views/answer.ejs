@@ -1,0 +1,46 @@
+<% include partials/headers %>
+<div class="container">
+  <div class="jumbotron" style="background:transparent">
+    <img src="http://i.imgur.com/C3SNdeo.jpg" class="img-responsive" style="width:1000px;" alt="tatap mata saya">
+  </div>
+
+
+  <div class="container">
+    <blockquote class="pull-right">
+  <h1>"Mau tau caranya ? makanya baca DOKUMENTASI !"</h1>
+  <footer>someone... <cite title="Source Title">hacktiv8</cite></footer>
+</blockquote>
+    <!-- <p class="text-center"><h1><small>I want to play a game with you...</small> Look into my eyes
+      <small>now imagine <mark style="color:red">one of our Instructor</mark> in hacktiv8</small>
+      are you ready ?</h1></p> -->
+    <!-- Button trigger modal -->
+
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  This is my answer !
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><%= answer.name %></h4>
+      </div>
+      <div class="modal-body">
+        <img src="images/<%=answer.photo%>" alt="foto <%= answer.name %>" height="598" width="567">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+</div>
+
+<% include partials/footer %>

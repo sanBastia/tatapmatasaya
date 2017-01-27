@@ -1,0 +1,48 @@
+<% include partials/headers %>
+
+  <div class="container">
+    <div class="jumbotron" style="background:transparent">
+      <img src="http://i.imgur.com/C3SNdeo.jpg" class="img-responsive" style="width:1000px;" alt="tatap mata saya">
+    </div>
+
+
+    <div class="container-fluid ">
+        <div class="modal-dialog">
+          <div class="modal-content">
+             <div class="modal-header">
+                <h3><span class="label label-warning" id="qid"></span>Is this person had over 10 years person in his/her field ?</h3>
+            </div>
+            <div class="modal-body">
+                <div class="col-xs-3 col-xs-offset-5">
+                   <div id="loadbar" style="display: none;">
+                      <div class="blockG" id="rotateG_01"></div>
+                      <div class="blockG" id="rotateG_02"></div>
+                      <div class="blockG" id="rotateG_03"></div>
+                      <div class="blockG" id="rotateG_04"></div>
+                      <div class="blockG" id="rotateG_05"></div>
+                      <div class="blockG" id="rotateG_06"></div>
+                      <div class="blockG" id="rotateG_07"></div>
+                      <div class="blockG" id="rotateG_08"></div>
+                  </div>
+              </div>
+
+
+                  <form action="/addAns4" method="post">
+
+                    <label class="toggle-label element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="ans" value=7>yes</label>
+                    <label class="toggle-label element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="ans" value=8>no</label>
+
+                      <label class="element-animation2 btn btn-lg btn-primary btn-block"><input type="submit" class="btn btn-primary"></label>
+                  </form>
+
+       </div>
+       <div class="modal-footer text-muted">
+        <span id="answer"></span>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+  </div>
+<% include partials/footer %>
